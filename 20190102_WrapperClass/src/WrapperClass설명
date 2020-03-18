@@ -1,0 +1,33 @@
+26번 Wrapper Class
+
+기본타입
+byte short int long : 정수형
+float double : 실수형
+boolean :논리형
+char : 문자형
+
+stack영역 : LIFO(Last In First Out) / 변수(객체명), 연산
+Heap : Garbage Collection / 객체(reference, hashcode), 생성자
+new A(); <- Garbage Collection의 대상(JVM) 
+
+Stack 영역 vs Heap 영역은 서로 절대 호환이 되지 않는다
+int a 1 = 100 -> long l = a; // Promotion으로 가능함, 반대면 Casting
+하지만 Heap 형변환은 다른 Class(타입) ~~는 서로 호환되지 않음
+
+
+int a = 10; <- stack
+Integer aa =10; <- Heap
+
+자동으로 기본타입은 참조타입으로 변환될 수 있도록 한것 <- Wrapper Class
+서로 상응되는 Class가 있음
+byte <-> Byte
+short <-> Short
+int <-> Integer
+long <-> Long
+
+float <-> Float
+double <-> Double
+
+boolean <-> Boolean
+
+char <-> Character
